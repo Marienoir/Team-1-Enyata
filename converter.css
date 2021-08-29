@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.container-card{
+    background: #fff;
+    box-shadow: 7px 20px 20px 9px rgb(0 0 0 / 7%);
+    padding: 50px;
+}
+.container-img img{
+    width: 30px;
+    position: relative;
+    left: 80px;
+    margin-top: 20px;
+}
+.searchBox, .from, .to{
+    padding: 10px;
+    border: 1px solid rgb(216, 215, 215);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+label{
+    padding: 10px 0;
+    font-weight: bold;
+}
+.from, .to, button{
+    width: 190px;
+}
+button {
+    font-size: 1em;
+    background: #fbbf19;
+    color: #fff;
+    border: 0.1rem solid #fbbf19;
+    padding: 0.85em 0.75em;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+  button:hover {
+    color: #fbbf19;
+}
+  button::after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+  button[class^="slide"]::after {
+    transition: all 0.35s;
+}
+  button[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+  button.slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+}
