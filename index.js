@@ -5,7 +5,7 @@
 // api key 387c41165d7f4a9ba65d224fb4b0b429
 
 
-
+// declared variable
 var respFrom;
 var respTo;
 var searchValue;
@@ -46,11 +46,11 @@ function getResults() {
         return data;
       }) 
       .then(displayResults => {
-        console.log(displayResults.result.rate);
+        console.log(displayResults.result);
         const finalValue = document.querySelector("#outPut");
         var numberValue = ""
         if (finalValue) {
-          numberValue = finalValue.innerHTML = displayResults.result.rate.toFixed(2);
+          numberValue = finalValue.innerHTML = displayResults.result[respTo].toFixed(2);
          }
       }); 
 }
