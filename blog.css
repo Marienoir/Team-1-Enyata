@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.blog-section{
+    padding: 20px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.text-center{
+    text-align: left;
+    margin: 20px 0;
+}
+/* .text-center h1::after{
+    content: "";
+    border-bottom: 2px solid #fbbf19;
+} */
+.blog-card{
+    display: flex;
+    justify-content: center;
+}
+
+.blog-box{
+    background: #fff;
+    box-shadow: 7px 20px 20px 9px rgb(0 0 0 / 7%);
+    width: 300px;
+    margin: 20px;
+    color:#4b4646;
+}
+.blog-box h3{
+    margin: 10px 0;
+    padding: 10px;
+}
+.blog-box a{
+    text-decoration: none;
+    color:#f1b40c ;
+    font-weight: bold;
+    padding: 10px;
+}
+.text-center h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 5%; /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 3px solid #f1b40c; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.text-center h1:hover:after {
+    width: 15%; /* This will be the new width of your border when on hover */
+}
+
+@media (max-width:768px) {
+    .blog-card{
+        flex-direction: column;
+    }
+}
