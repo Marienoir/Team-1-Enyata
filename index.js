@@ -47,7 +47,10 @@ function getResults() {
       }) 
       .then(displayResults => {
         console.log(displayResults.result.rate);
-        const finalValue = document.querySelector("outPut");
-         finalValue.innerHTML = displayResults.result.rate;
-      });
+        const finalValue = document.querySelector("#outPut");
+        var numberValue = ""
+        if (finalValue) {
+          numberValue = finalValue.innerHTML = displayResults.result.rate.toFixed(2);
+         }
+      }); 
 }
