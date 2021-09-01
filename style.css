@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color:aliceblue;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+}
+
+h1{
+    font-size: 24px;
+}
+
+.currency {
+    display: block;
+    color: #ff880e;
+}
+
+.email-icon,
+.phone-icon {
+    width: 20px;
+
+}
+
+nav {
+    width: 65%;
+    margin-left: auto;
+    padding: 10px;
+    background-color: #ff880e;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+} 
+
+
+.nav-links {
+    display: flex;
+    padding: 10px 30px;
+    margin: 0;
+    list-style-type: none;
+    column-gap: 40px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero-banner {
+    background-image: url(/images/coin-fist.jpeg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+
+}
+
+.hero-banner h2 {
+    font-size: 50px;
+    color: white;
+    padding-top: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button {
+    font-size: 1em;
+    background: #ff880e;
+    color: #fff;
+    border: 0.1rem solid #ff880e;
+    padding: 0.85em 0.75em;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+  button a:hover {
+    color: #ff880e;
+}
+  button::after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+  button[class^="slide"]::after {
+    transition: all 0.35s;
+}
+  button[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+  button.slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+}
+.about-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 90px 20px 0;
+}
+.about-section img {
+    width: 700px;
+    margin: 30px 40px 0 0;
+}
+.about-section h1{
+    font-size: 1.7rem;
+    margin: 20px 0;
+}
+.about-section p{
+    line-height: 30px;
+    text-align: justify;
+}
+.text h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 36%; /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 10px solid #ff880e; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.text h1:hover:after {
+    width: 67%; /* This will be the new width of your border when on hover */
+}
+.blog-section{
+    padding: 20px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.text-center{
+    text-align: left;
+    margin: 20px 0;
+}
+.blog-card{
+    display: flex;
+    justify-content: center;
+}
+
+.blog-box{
+    background: #fff;
+    box-shadow: 7px 20px 20px 9px rgb(0 0 0 / 7%);
+    width: 300px;
+    margin: 20px;
+    color:#4b4646;
+}
+.blog-box h3{
+    margin: 10px 0;
+    padding: 10px;
+}
+.blog-box a{
+    text-decoration: none;
+    color:#ff880e ;
+    font-weight: bold;
+    padding: 10px;
+}
+.text-center h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 5%; /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 10px solid #ff880e; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.text-center h1:hover:after {
+    width: 15%; /* This will be the new width of your border when on hover */
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 1rem;
+    }
+    nav{
+        width: 70%;
+    }
+    .email, .phone{
+        display: none;
+    }
+    .hero-banner h2{
+        font-size: 2.1rem;
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .text{
+        padding: 10px;
+    }
+    .text h1{
+        font-size: 1.6rem;
+    }
+    .about-section img{
+        margin: 30px;
+        width: 500px;
+    }
+    .header{
+        font-size: 20px;
+        text-align: center;
+    }
+    .blog-card{
+        flex-direction: column;
+    }
+}
