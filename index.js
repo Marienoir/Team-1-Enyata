@@ -9,18 +9,8 @@
 var respFrom;
 var respTo;
 var searchValue;
-
 const fromSelect = document.getElementById("from");
-fromSelect.addEventListener("change", () => {
-     respFrom = fromSelect.options[fromSelect.selectedIndex].value;
-});
-
 const toSelect = document.getElementById("to");
-toSelect.addEventListener("change", () => {
-  respTo = toSelect.options[toSelect.selectedIndex].value;
-});
-
-
 
 const searchBox = document.querySelector(".searchBox");
 searchBox.addEventListener("input", updateValue);
@@ -28,29 +18,37 @@ searchBox.addEventListener("input", updateValue);
 function updateValue(e) {
     searchValue = e.target.value;
 }
-  
 
 const convert = document.getElementById("slide_from_left");
 convert.addEventListener("click", getResults);
 
+const toggle = document.getElementById("toggler");
+toggle.addEventListener("click", () => {
+    let formerFromSelect = fromSelect.value;
+    let formerToSelect = toSelect.value;
+
+    fromSelect.value = formerToSelect;
+    toSelect.value = formerFromSelect;
+    getResults();
+});
 
 function getResults() {
-    console.log(respFrom, respTo, searchValue);
+    respFrom = fromSelect.value;
+    respTo = toSelect.value;
     const options = { method: "GET", headers: { Accept: "application/json" } };
     fetch(
-      `https://api.fastforex.io/convert?from=${respFrom}&to=${respTo}&amount=${searchValue}&api_key=c85531cf1c-e93b786ce2-qyo7zr`,
-      options
+        `https://api.fastforex.io/convert?from=${respFrom}&to=${respTo}&amount=${searchValue}&api_key=c85531cf1c-e93b786ce2-qyo7zr`,
+        options
     )
-      .then((currency) => {
+    .then((currency) => {
         const data = currency.json();
         return data;
-      }) 
-      .then(displayResults => {
-        console.log(displayResults.result);
-        const finalValue = document.querySelector("#outPut");
-        var numberValue = ""
-        if (finalValue) {
-          numberValue = finalValue.innerHTML = displayResults.result[respTo].toFixed(2);
-         }
-      }); 
+    }) 
+    .then(displayResults => {
+        let result = displayResults.result;
+        const finalValue = document.querySelector("#output");
+        if (result) {
+            finalValue.innerHTML = displayResults.result[respTo].toFixed(2);
+        }
+    }); 
 }
