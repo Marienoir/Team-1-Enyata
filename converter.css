@@ -45,9 +45,7 @@ label{
     padding: 10px 0;
     font-weight: bold;
 }
-.from, .to, button{
-    width: 190px;
-}
+
 button {
     font-size: 1em;
     background: #fbbf19;

@@ -179,6 +179,7 @@ button {
     width: 300px;
     margin: 20px;
     color:#4b4646;
+    height: 350px;
 }
 .blog-box h3{
     margin: 10px 0;
@@ -207,10 +208,8 @@ button {
     body{
         font-size: 1rem;
     }
-    nav{
-        width: 70%;
-    }
-    .email, .phone{
+    
+    nav, .email, .phone{
         display: none;
     }
     .hero-banner h2{
