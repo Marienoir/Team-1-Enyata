@@ -23,7 +23,8 @@
         <div class="flex-column">
           <label for="from">From</label>
           <select class="from"  id="from">
-            <option value="USD">USD</option>
+            <option selected value="USD">USD</option>
+            <option value="AED">AED</option>
             <option value="ARS">ARS</option>
             <option value="AUD">AUD</option>
             <option value="BGN">BGN</option>
@@ -56,6 +57,7 @@
             <option value="MXN">MXN</option>
             <option value="MYR">MYR</option>
             <option value="NOK">NOK</option>
+            <option value="NGN">NGN</option>
             <option value="NZD">NZD</option>
             <option value="PAB">PAB</option>
             <option value="PEN">PEN</option>
@@ -77,7 +79,7 @@
           </select>
         </div>
         <div class="container-img">
-          <img src="./icons/rotate.jpg" />
+          <img src="./icons/rotate.jpg" id='toggler'/>
         </div>
         <div class="flex-column">
           <label for="to">To</label>
@@ -116,6 +118,7 @@
             <option value="MXN">MXN</option>
             <option value="MYR">MYR</option>
             <option value="NOK">NOK</option>
+            <option selected value="NGN">NGN</option>
             <option value="NZD">NZD</option>
             <option value="PAB">PAB</option>
             <option value="PEN">PEN</option>
@@ -144,7 +147,7 @@
          <div id="amount">
         <h2>
           Converted Amount :
-          <span id="outPut" style="color: green"> </span>
+          <span id="output" style="color: green"> </span>
         </h2>
       </div>
       </div>
