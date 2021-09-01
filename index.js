@@ -32,6 +32,11 @@ toggle.addEventListener("click", () => {
     getResults();
 });
 
+function numberFormat(n) {
+    const num = n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return num
+}
+
 function getResults() {
     respFrom = fromSelect.value;
     respTo = toSelect.value;
@@ -48,7 +53,8 @@ function getResults() {
         let result = displayResults.result;
         const finalValue = document.querySelector("#output");
         if (result) {
-            finalValue.innerHTML = displayResults.result[respTo].toFixed(2);
+          finalValue.innerHTML = numberFormat(displayResults.result[respTo])
+              
         }
     }); 
 }
