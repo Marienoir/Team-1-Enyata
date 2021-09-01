@@ -7,15 +7,12 @@
     padding: 20px;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
+    background-color: #fff
 }
 .text-center{
     text-align: left;
     margin: 20px 0;
 }
-/* .text-center h1::after{
-    content: "";
-    border-bottom: 2px solid #fbbf19;
-} */
 .blog-card{
     display: flex;
     justify-content: center;
@@ -23,9 +20,11 @@
 
 .blog-box{
     background: #fff;
-    box-shadow: 7px 20px 20px 9px rgb(0 0 0 / 7%);
+    box-shadow:7px 20px 20px 7px lightgrey;
     width: 300px;
+    height: 350px;
     margin: 20px;
+    border-radius: 8px;
     color:#4b4646;
 }
 .blog-box h3{
@@ -41,14 +40,14 @@
 .text-center h1:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
-    width: 5%; /* Change this to whatever width you want to have before hover. */
+    width: 11%; /* Change this to whatever width you want to have before hover. */
     padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: 3px solid #f1b40c; /* This creates the border. Replace black with whatever color you want. */
-    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+    border-bottom: 4px solid #f1b40c; /* This creates the border. Replace black with whatever color you want. */
+    transition: .3s; /* This establishes the amount of time in seconds the animation should take from start to finish */
 }
 
 .text-center h1:hover:after {
-    width: 15%; /* This will be the new width of your border when on hover */
+    width: 25%; /* This will be the new width of your border when on hover */
 }
 
 @media (max-width:768px) {
