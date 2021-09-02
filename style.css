@@ -245,7 +245,7 @@ button {
 footer {
     background-color: gray;
     padding: 40px 20px;
-    color: #fff;
+    color: #fff !important;
 }
 
 footer .contacts {
@@ -260,6 +260,7 @@ footer .contact {
     display: flex;
     align-items: center;
     column-gap: 10px;
+    color: #fff !important;
 }
 
 footer img {
@@ -269,6 +270,7 @@ footer img {
 footer p {
     text-align: center;
     margin-top: 20px;
+    color: #fff !important;
 }
 
 @media only screen and (max-width: 992px){
