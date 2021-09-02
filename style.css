@@ -12,12 +12,20 @@ body{
 
 header {
     background-color:aliceblue;
+    padding: 15px 40px 15px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 100;
+}
+
+nav {
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px;
-}
+} 
 
 .brand-logo {
     display: flex;
@@ -25,11 +33,11 @@ header {
 }
 
 .logo {
-    width: 40px;
+    width: 35px;
 }
 
 h1{
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .currency {
@@ -43,29 +51,42 @@ h1{
 
 }
 
-nav {
-    width: 65%;
-    margin-left: auto;
-    padding: 10px;
-    background-color: #ff880e;
-    position: absolute;
-    top: 75px;
-    right: 0px;
-} 
-
-
 .nav-links {
     display: flex;
-    padding: 10px 30px;
     margin: 0;
     list-style-type: none;
     column-gap: 40px;
 }
 
+.nav-toggler,
+.nav-links.sm {
+    display: none;
+}
+
 .nav-links a {
-    color: #fff;
+    color: #ff880e;
     text-decoration: none;
     text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.nav-links a:hover {
+    border-bottom: 1px solid #ff880e;
+    color: #4b4646;
+}
+
+.nav-links .convert {
+    background-color: #ff880e;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1.5px solid #fff;
+}
+
+.nav-links .convert:hover {
+    background-color: #fff;
+    color: #ff880e;
+    border: 1.5px solid #ff880e;
 }
 
 .hero-banner {
@@ -74,7 +95,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     text-align:center;
-
+    margin-top: 84px;
 }
 
 .hero-banner h2 {
@@ -208,10 +229,43 @@ button {
     body{
         font-size: 1rem;
     }
+
+    .nav-links {
+        flex-direction: column;
+        row-gap: 25px;
+        margin: 25px 0;
+    }
     
-    nav, .email, .phone{
+    .nav-links.lg{
         display: none;
     }
+
+    .nav-toggler {
+        display: block;
+        width: 50px;
+    }
+
+    .nav-links.sm {
+        display: flex;
+    }
+
+    .nav-links.sm.hide {
+        display: none;
+    }
+
+    .nav-links li:last-of-type {
+        margin-top: 10px;
+    }
+
+
+    .hero-banner {
+        margin-top: 84px;
+    }
+
+    .hero-banner.shift {
+        margin-top: 295px;
+    }
+
     .hero-banner h2{
         font-size: 2.1rem;
     }
@@ -234,5 +288,11 @@ button {
     }
     .blog-card{
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    header {
+        padding: 15px 25px;
     }
 }
