@@ -90,6 +90,151 @@ h1{
 }
 
 .hero-banner {
+    background-color: rgb(73, 67, 67);
+    background-blend-mode:multiply ;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/bg2.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.hero-banner h2 {
+    font-size: 50px;
+    color: white;
+    padding-top: 280px;
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.hero-banner p{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 20px 0;
+    line-height: 30px;
+}
+.convert-btn {
+    margin: 40px;
+    text-decoration: none;
+    color: white;
+    background: #ff880e;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.convert-btn:hover {
+    color: #ff880e;
+    background: #fff;
+    border: 1px solid #ff880e;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button {
+    font-size: 1em;
+    background: #ff880e;
+    color: rgb(187, 180, 180);
+    border: 0.1rem solid #ff880e;
+    padding: 0.85em 0.75em;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+  button:hover,button a:hover {
+    color: #ff880e;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    /* height: 100vh; */
+}
+.about-section img {
+    width: auto;
+    height: 350px;
+    margin: 30px 40px 0 0;
+}
+.about-section h1{
+    font-size: 1.7rem;
+    margin: 20px 0;
+}
+.about-section p{
+    line-height: 40px;
+    text-align: justify;
+    margin-right: 30px;
+}
+.text h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 30%; /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 10px solid #ff880e; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.text h1:hover:after {
+    width: 50%; /* This will be the new width of your border when on hover */
+}
+.blog-section{
+    padding: 20px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: aliceblue;
+    /* height: 100vh; */
+}
+.text-center{
+    text-align: left;
+    margin: 20px 0;
+}
+.blog-card{
+    display: flex;
+    justify-content: center;
+}
+
+.blog-box{
+    background: #fff;
+    box-shadow: 7px 20px 20px 9px rgb(0 0 0 / 7%);
+    width: 300px;
+    margin: 20px;
+    color:#4b4646;
+    height: 350px;
+}
+/* .blog-box img {
+    width: auto;
+    height: 100px;
+} */
+.blog-box h3{
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+.blog-box a{
+    text-decoration: none;
+    color:#ff880e ;
+    font-weight: bold;
+    padding: 20px;
+}
+.text-center h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 5%; /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 10px solid #ff880e; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.text-center h1:hover:after {
+    width: 15%; /* This will be the new width of your border when on hover */
+}
+/* .hero-banner {
     background-image: url(/images/coin-fist.jpeg);
     height: 80vh;
     background-repeat: no-repeat;
@@ -104,12 +249,12 @@ h1{
     padding-top: 200px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-}
-button a{
+} */
+/* button a{
     text-decoration: none;
     color: white;
-}
-button {
+} */
+/* button {
     font-size: 1em;
     background: #ff880e;
     color: #fff;
@@ -143,44 +288,34 @@ button {
     top: 0;
     bottom: 0;
     transition: all 0.35s;
-}
-  button.slide_from_left::after {
+} */
+  /* button.slide_from_left::after {
     top: 0;
     bottom: 0;
     left: -100%;
     right: 100%;
-}
-.about-section {
+} */
+/* .about-section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px 90px 20px 0;
-}
-.about-section img {
+} */
+/* .about-section img {
     width: 700px;
     margin: 30px 40px 0 0;
-}
-.about-section h1{
+} */
+/* .about-section h1{
     font-size: 1.7rem;
     margin: 20px 0;
-}
-.about-section p{
+} */
+/* .about-section p{
     line-height: 30px;
     text-align: justify;
-}
-.text h1:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    width: 36%; /* Change this to whatever width you want to have before hover. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: 10px solid #ff880e; /* This creates the border. Replace black with whatever color you want. */
-    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
-}
+} */
 
-.text h1:hover:after {
-    width: 67%; /* This will be the new width of your border when on hover */
-}
-.blog-section{
+
+/* .blog-section{
     padding: 20px;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
@@ -211,19 +346,9 @@ button {
     color:#ff880e ;
     font-weight: bold;
     padding: 10px;
-}
-.text-center h1:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    width: 5%; /* Change this to whatever width you want to have before hover. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: 10px solid #ff880e; /* This creates the border. Replace black with whatever color you want. */
-    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
-}
+} */
 
-.text-center h1:hover:after {
-    width: 15%; /* This will be the new width of your border when on hover */
-}
+
 
 @media only screen and (max-width: 768px){
     body{
@@ -256,19 +381,22 @@ button {
     .nav-links li:last-of-type {
         margin-top: 10px;
     }
-
-
-    .hero-banner {
-        margin-top: 84px;
+    .hero-banner h2 {
+        font-size: 40px;
+        padding-top: 240px;
     }
+
+    /* .hero-banner {
+        margin-top: 84px;
+    } */
 
     .hero-banner.shift {
         margin-top: 295px;
     }
 
-    .hero-banner h2{
+    /* .hero-banner h2{
         font-size: 2.1rem;
-    }
+    } */
     .about-section{
         flex-direction: column;
     }
