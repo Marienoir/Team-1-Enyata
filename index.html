@@ -14,74 +14,75 @@
     <title>Currency Converter</title>
 </head>
 <body>
-    <header>
-        <div class="brand-logo">
-            <img class="logo" src="/images/exchange.png" alt="brandlogo">
-            <h1>CURRENCY <span class="currency">converter</span></h1>
-        </div>
-        <div class="email">
-            <img class="email-icon" src="/images/envelope.png" alt="email">
-            currencyconverter@gmail.com
-        </div>
-        <div class="phone">
-            <img class="phone-icon" src="/images/smartphone-call.png" alt="phonenumber">
-            +2346578467
-        </div>
-    </header>
-    <nav>
-        <ul class="nav-links">
+    <header id='header'>
+        <nav>
+            <div class="brand-logo">
+                <img class="logo" src="/images/exchange.png" alt="brandlogo">
+                <h1>CURRENCY <span class="currency">converter</span></h1>
+            </div>
+            <ul class="nav-links lg">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="/converter.html" class='convert'>Convert</a></li>
+            </ul>
+            <img id='nav-toggler' class='nav-toggler' src='/icons/hamburger.png' alt='menu icon'>
+        </nav>
+        <ul class="nav-links sm hide" id='nav-links'>
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#blog">Blog</a></li>
+            <li><a href="/converter.html" class='convert'>Convert</a></li>
         </ul>
-    </nav>
+    </header>
     <main>
-        <div class="hero-banner">
+        <section class="hero-banner" id='hero-banner'>
             <h2>Progress & Success<br>CURRENCY</h2>
             <button class="slide_from_left"><a href="./converter.html">CONVERT</a></button>
-        </div>
+        </section>
+        <section class="about-section" id="about">
+            <img src="./images/cryto.png">
+            <div class="text">
+              <h1><span style="color:#ff880e">Welcome</span> To Currency Converter</h1>
+              <p>
+               Our free currency converter helps you to see how much of a specific currency<br> 
+               you hold is worth in another currency. You can convert over 20 currencies quickly and easily<br> 
+               to see exactly how much your currency is worth. With this, currency converter is becoming<br> 
+               a popular and proven choice when converting currencies.
+             </p>
+             <button class="slide_from_left"><a href="./converter.html">CONVERT</a></button>
+             </div>
+            </div>
+          </div>
+         </section>
+         <section class="blog-section" id="blog">
+            <div class="text-center">
+                <h1> Recent News<span> In The Financial Market</span></h1>
+            </div>
+            <div class="blog-card">
+                <div class="blog-box">
+                    <img src="images/image5.jpg">
+                    <h3>Visa to approve Cryptocurrency Card by Australian Startup- Finance Bitcoin News</h3>
+                    <a target="_blank" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnews.bitcoin.com%2Fvisa-cryptocurrency-card-australian-startup%2F&psig=AOvVaw0-QcKt82OfNd3mmg1tGjMg&ust=1630430598422000&source=images&cd=vfe&ved=2ahUKEwjx_7u2odnyAhWGw4UKHdLIAScQr4kDegUIARD4AQ">Read More</a>
+                </div>
+                <div class="blog-box">
+                    <img src="images/image3.jpg">
+                    <h3>Tanzania Banks say it is working on Presidents Cryptocurrency Push - US News</h3>
+                    <a target="_blank"  href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.usnews.com%2Fnews%2Ftechnology%2Farticles%2F2021-06-25%2Ftanzania-central-bank-says-it-is-working-on-presidents-cryptocurrency-push&psig=AOvVaw0-QcKt82OfNd3mmg1tGjMg&ust=1630430598422000&source=images&cd=vfe&ved=2ahUKEwjx_7u2odnyAhWGw4UKHdLIAScQr4kDegUIARCOAg">Read More</a>
+                </div>
+                <div class="blog-box">
+                    <img src="images/image4.jpg">
+                    <h3>Bitcoin, Ethereum: 3 Factors Could Mean New Highs In Early September - Investing.com </h3>
+                    <a target="_blank" href="https://ng.investing.com/analysis/bitcoin-ethereum-3-factors-could-mean-new-highs-in-early-september-90229">Read More</a>
+                </div>
+                <div class="blog-box">
+                    <img src="images/image5.jpg">
+                    <h3>Covid-19 Quarantine Rules Threaten Hong Kong’s Role as Finance Hub, Businesses Say</h3>
+                    <a target="_blank"  href="https://www.wsj.com/articles/covid-19-quarantine-rules-threaten-hong-kongs-role-as-finance-hub-businesses-say-11630067400?mod=markets_major_pos12">Read More</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <section class="about-section" id="about">
-        <img src="./images/cryto.png">
-        <div class="text">
-          <h1><span style="color:#ff880e">Welcome</span> To Currency Converter</h1>
-          <p>
-           Our free currency converter helps you to see how much of a specific currency<br> 
-           you hold is worth in another currency. You can convert over 20 currencies quickly and easily<br> 
-           to see exactly how much your currency is worth. With this, currency converter is becoming<br> 
-           a popular and proven choice when converting currencies.
-         </p>
-         <button class="slide_from_left"><a href="./converter.html">CONVERT</a></button>
-         </div>
-        </div>
-      </div>
-     </section>
-     <section class="blog-section" id="blog">
-        <div class="text-center">
-            <h1> Recent News<span> In The Financial Market</span></h1>
-        </div>
-        <div class="blog-card">
-            <div class="blog-box">
-                <img src="images/image5.jpg">
-                <h3>Visa to approve Cryptocurrency Card by Australian Startup- Finance Bitcoin News</h3>
-                <a target="_blank" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnews.bitcoin.com%2Fvisa-cryptocurrency-card-australian-startup%2F&psig=AOvVaw0-QcKt82OfNd3mmg1tGjMg&ust=1630430598422000&source=images&cd=vfe&ved=2ahUKEwjx_7u2odnyAhWGw4UKHdLIAScQr4kDegUIARD4AQ">Read More</a>
-            </div>
-            <div class="blog-box">
-                <img src="images/image3.jpg">
-                <h3>Tanzania Banks say it is working on Presidents Cryptocurrency Push - US News</h3>
-                <a target="_blank"  href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.usnews.com%2Fnews%2Ftechnology%2Farticles%2F2021-06-25%2Ftanzania-central-bank-says-it-is-working-on-presidents-cryptocurrency-push&psig=AOvVaw0-QcKt82OfNd3mmg1tGjMg&ust=1630430598422000&source=images&cd=vfe&ved=2ahUKEwjx_7u2odnyAhWGw4UKHdLIAScQr4kDegUIARCOAg">Read More</a>
-            </div>
-            <div class="blog-box">
-                <img src="images/image4.jpg">
-                <h3>Bitcoin, Ethereum: 3 Factors Could Mean New Highs In Early September - Investing.com </h3>
-                <a target="_blank" href="https://ng.investing.com/analysis/bitcoin-ethereum-3-factors-could-mean-new-highs-in-early-september-90229">Read More</a>
-            </div>
-            <div class="blog-box">
-                <img src="images/image5.jpg">
-                <h3>Covid-19 Quarantine Rules Threaten Hong Kong’s Role as Finance Hub, Businesses Say</h3>
-                <a target="_blank"  href="https://www.wsj.com/articles/covid-19-quarantine-rules-threaten-hong-kongs-role-as-finance-hub-businesses-say-11630067400?mod=markets_major_pos12">Read More</a>
-            </div>
-        </div>
-    </section>
+    <script src='nav.js'></script>
 </body>
 </html>
