@@ -9,7 +9,9 @@ body{
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
 }
-
+.container{
+    width: 100%;
+}
 header {
     background-color:aliceblue;
     margin: 0;
@@ -69,20 +71,41 @@ nav {
 }
 
 .hero-banner {
-    background-image: url(/images/coin-fist.jpeg);
-    height: 80vh;
-    background-repeat: no-repeat;
+    background-color: rgb(73, 67, 67);
+    background-blend-mode:multiply ;
+    background-position: center;
     background-size: cover;
-    text-align:center;
-
+    background-image: url(images/bg2.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
 }
 
 .hero-banner h2 {
     font-size: 50px;
     color: white;
     padding-top: 200px;
+    margin-left: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+}
+.hero-banner p{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 20px 0;
+    line-height: 30px;
+}
+.convert-btn {
+    margin: 40px;
+    text-decoration: none;
+    color: white;
+    background: #ff880e;
+    padding: 15px;
+    border-radius: 5px;
+}
+.convert-btn:hover {
+    color: white;
+    background: #af5a05;
 }
 button a{
     text-decoration: none;
@@ -91,7 +114,7 @@ button a{
 button {
     font-size: 1em;
     background: #ff880e;
-    color: #fff;
+    color: rgb(187, 180, 180);
     border: 0.1rem solid #ff880e;
     padding: 0.85em 0.75em;
     margin-top: 1.5rem;
@@ -102,7 +125,7 @@ button {
     font-weight: bold;
     border-radius: 5px;
 }
-  button a:hover {
+  button:hover,button a:hover {
     color: #ff880e;
 }
   button::after {
@@ -133,10 +156,12 @@ button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 90px 20px 0;
+    padding: 40px;
+    /* height: 100vh; */
 }
 .about-section img {
-    width: 700px;
+    width: auto;
+    height: 350px;
     margin: 30px 40px 0 0;
 }
 .about-section h1{
@@ -144,25 +169,28 @@ button {
     margin: 20px 0;
 }
 .about-section p{
-    line-height: 30px;
+    line-height: 40px;
     text-align: justify;
+    margin-right: 30px;
 }
 .text h1:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
-    width: 36%; /* Change this to whatever width you want to have before hover. */
+    width: 30%; /* Change this to whatever width you want to have before hover. */
     padding-top: 20px; /* This creates some space between the element and the border. */
     border-bottom: 10px solid #ff880e; /* This creates the border. Replace black with whatever color you want. */
     transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
 }
 
 .text h1:hover:after {
-    width: 67%; /* This will be the new width of your border when on hover */
+    width: 50%; /* This will be the new width of your border when on hover */
 }
 .blog-section{
     padding: 20px;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(230, 235, 238);
+    /* height: 100vh; */
 }
 .text-center{
     text-align: left;
@@ -181,15 +209,19 @@ button {
     color:#4b4646;
     height: 350px;
 }
+/* .blog-box img {
+    width: auto;
+    height: 100px;
+} */
 .blog-box h3{
     margin: 10px 0;
-    padding: 10px;
+    padding: 10px 20px;
 }
 .blog-box a{
     text-decoration: none;
     color:#ff880e ;
     font-weight: bold;
-    padding: 10px;
+    padding: 20px;
 }
 .text-center h1:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
@@ -213,7 +245,7 @@ button {
         display: none;
     }
     .hero-banner h2{
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
     .about-section{
         flex-direction: column;
@@ -225,8 +257,8 @@ button {
         font-size: 1.6rem;
     }
     .about-section img{
-        margin: 30px;
-        width: 500px;
+        margin-left: 30px;
+        width: 400px;
     }
     .header{
         font-size: 20px;
